@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        class Sofa {
+
+            /*Nessa fase você constrói os atributos do objeto,
+              define os parâmetros e atribui as variáveis*/
+
+            constructor(lugares, reclinavel, cor, novo) {
+                this.lugares = lugares
+                this.reclinavel = reclinavel
+                this.novo = novo
+                this.cor = cor
+            }
+
+            /* Depois de criar o objeto, você irá definir os métodos que farão a lógica dele
+                como ele deve se comportar e afins */
+            estadoConservacao() {
+
+                if (this.novo === true) {
+                    console.log('Novo')
+                } else {
+                    console.log('Usado')
+                }
+            }
+        }
+
+        /* Nessa fase, você irá atribuir o objeto a uma variável, dessa forma você conseguirá
+        usá-lo e exibi-lo, portanto, conseguirá acessar ele através da própria variável, 
+        ex: */
+
+        let sofa = new Sofa(2, 'sim', 'amarelo', 'usado')
+        console.log(sofa.estadoConservacao())
+        console.log(sofa)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
