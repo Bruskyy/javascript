@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        class Produto{
+            constructor(descricao, preco){
+                this.descricao = descricao
+                this.preco = preco
+            }
+
+            verDescricao(){
+                console.log(`${this.descricao} por ${this.preco}`)
+            }
+        }
+
+        let produto = new Produto()
+        console.log(produto)
+
+        let produtoLiteral = {
+            produto: 'notebook',
+            valor: 2999,
+            verDescricao: function(){
+                console.log(`${this.descricao} por apenas(testando atributo com function) ${this.preco}`)
+            }
+        }
+        produtoLiteral.verDescricao()
+        console.log(produtoLiteral)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
