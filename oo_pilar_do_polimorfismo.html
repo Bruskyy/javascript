@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        class Animal {
+            constructor(cor, tamanho, peso) {
+
+                this.tamanho = tamanho
+                this.cor = cor
+                this.peso = peso
+            }
+
+            dormir() {
+                console.log('estou dormindo')
+            }
+
+        }
+
+        class Passaro extends Animal {
+            constructor(bico, cor, tamanho, peso) {
+                super(cor, tamanho, peso)
+                this.bico = bico
+            }
+
+            voar() {
+                console.log('voando')
+            }
+        }
+
+        class Papagaio extends Passaro {
+
+            constructor(sabeFalar, cor, tamanho, peso) {
+                super('Médio', cor, tamanho, peso)
+                this.sabeFalar = sabeFalar
+            }
+
+            falar() {
+                console.log('falando')
+            }
+        }
+
+        class Avestruz extends Passaro {
+            constructor(bico, cor, tamanho, peso) {
+                super('a', 'a', 'b', 10)
+            }
+
+            enterrarCabeca() {
+                console.log('enterrou a cabeça')
+            }
+
+            voar() {
+                console.log('n sabe voar')
+            }
+        }
+
+        let papagaio = new Papagaio(true, 'verde', '25cm', '350gr')
+        let avestruz = new Avestruz()
+        avestruz.voar()
+        avestruz.enterrarCabeca()
+        console.log(avestruz)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var Objetos = Array()
+
+        function criarObjeto() {
+            console.clear()
+            Objetos.push(new Papagaio(false, 'vermelho', '30cm', '200g'))
+            console.log(Objetos)
+
+        }
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <input type="button" placeholder="Clique para criar um papagaio" onclick="criarObjeto()" id="botao"
+        style="width: 100px;">
+
+</body>
+<script>document.getElementById('botao').style.backgroundColor = 'red'</script>
+
+</html>
