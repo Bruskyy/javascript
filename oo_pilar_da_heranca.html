@@ -10,7 +10,7 @@
 
         class Animal {
             constructor() {
-                
+
                 this.tamanho = ''
                 this.cor = ''
             }
@@ -47,18 +47,18 @@
             }
         }
 
-        class Papagaio extends Passaro{
+        class Papagaio extends Passaro {
 
-            constructor(){
+            constructor() {
                 super()
                 this.sabeFalar = true
             }
 
-            falar(){
+            falar() {
                 console.log('falando')
             }
         }
-        
+
         let cachorro = new Cachorro()
         let passaro = new Passaro()
         let papagaio = new Papagaio()
@@ -66,7 +66,7 @@
         console.log(cachorro)
         console.log(passaro)
         console.log(papagaio)
-        
+
         cachorro.dormir()
         passaro.dormir()
         papagaio.dormir()
