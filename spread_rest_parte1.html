@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let listaAfazeres = ['Acordar', 'escovar os dentes', 'colocar a roupa', 'arrumar a mochila e sair']
+        let listaAfazeres2 = ['Jogar', 'correr', 'pular']
+
+        console.log(listaAfazeres)
+        console.log(...listaAfazeres)
+        console.log([...listaAfazeres])
+
+        listaAfazeres3 = ['lavar o cabelo', 'passar roupa', 'estudar.', ...listaAfazeres, ...listaAfazeres2]
+
+        console.log(listaAfazeres3)
+
+        let pessoa1 = {
+            nome: 'Vitor',
+            idade: 22
+        }
+
+        let pessoa1clone = {
+            profissao: 'Programador'
+        }
+
+        let pessoajunt = {
+            ...pessoa1,
+            ...pessoa1clone
+        }
+
+        console.log(pessoajun)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
