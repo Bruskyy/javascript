@@ -5,23 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script>
 
-        
+        let nomes = ['Marcos', 'William', 'Gabriel', 'Vitor', 'André', 'Luiz']
 
-        function soma(...param){
-            let resultado = 0
+        let nome = 'Matheus'
 
-            console.log(param)
+        console.log(nomes.includes('Vitor'))
 
-            param.forEach(v => resultado += v)
+        console.log(nome.startsWith('Mat'))
 
-            return resultado
-
-        }
-
-        console.log(soma(3, 8, 5, 7, 110, 23, 65))
-
+        console.log(nome.endsWith('s'))
     </script>
 </head>
 <body>
